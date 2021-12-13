@@ -1,0 +1,31 @@
+/*
+ This file created by structgen.
+*/
+package main
+
+//Database: expenses   Table: expense
+type Expense struct{
+    Id             int                 `json:"id"`
+    Exdate         string              `json:"exdate"`
+    Examt          float32             `json:"examt"`
+    Excatagory     string              `json:"excatagory"`
+    Exdescription  string              `json:"exdescription"`
+}
+
+//Field list for scan statements
+var Scanline string = "&Res.Id, &Res.Exdate, &Res.Examt,
+                  &Res.Excatagory, &Res.Exdescription"
+
+//Table var to scan into
+var Res Expense
+
+//CRUD Skeletons
+
+func ReadExpense(){}
+
+func InsertExpense(){}
+
+func UpdateExpense(){}
+
+func DeleteExpense(){}
+
