@@ -1,0 +1,39 @@
+    {{template "header.tpl" .}} 
+  <body>
+    {{template "nav.tpl" .}}  
+    <div class="container">
+    <form id="form1" name="form1" class="form_main" method="POST" action="/opts" style="margin-top: 17%" >
+   {{template "buttons.tpl" .}}         
+
+        <input type="hidden"  name="crudop" id="crudop"/>        
+        <input type ="hidden" name="recid"  id = "recid"/>       
+        
+        <div class="form-group row">
+            <label class="col-sm-4 col-form-label">Primary Key</label>
+        <div class="col-sm-5">
+            <input type="text" class="form-control" id="id" name="id"/>
+        </div>
+        <input class="radio lb" type="radio" id="rpk" name="luby" value="id">
+        </div>
+        
+        <div class="form-group row">
+            <label class="col-sm-4 col-form-label">Description</label>
+        <div class="col-sm-5">
+            <input type="text" class="form-control" id="gdescription" name="gdescription"/>
+        </div>
+        <input class="radio lb" type="radio" id="rpk" name="luby" value="gdescription">
+        </div>
+    </form>
+    <div id="lookuplist" class="lookuplist">
+        <select class="custom-select" name="slookup" id="slookup" onchange="lookupProc(this)"></select>
+    </div>
+    
+    </div> <!--end container-->
+
+    <!--JQuery and Bootstrap JS-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/js/groups.js"></script>
+	<script src="/static/js/common.js"></script>
+
+    {{template "footer.tpl" .}}
