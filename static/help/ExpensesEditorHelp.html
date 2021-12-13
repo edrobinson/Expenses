@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>Expenses Editor Help</title>
+</head>
+<body>
+<br/><br/>
+<xmp theme="cerulean">
+
+# The expenses editor is the main page of the expenses program. This is where you enter a record of all of your expenditures.
+----
+<p align="center">
+![Expense Screen](./images/expensesscreen.png)
+</p>
+
+##Screen Features:
+
+## 1. Menu - There are 2 menues - Page Menu and Help Menu. The page menu presents the different program pages and the help menu presents these help pages. In either case, click the menu button then click the item you want to see.
+
+
+<p align="center">
+![Menu](./images/menu.png) &nbsp;&nbsp;  ![Menu](./images/helpmenu.png)
+</p>
+
+#### The menues are common to all of the pages...
+
+
+## 2. Buttons - The row of buttons is used to perform operations on your Information:
+<p align="center">
+![Buttons](./images/buttons.png)
+</p>
+
+* #### Insert - add a new record after filling out the fields.
+* #### First - displays the first expense record.
+* #### Prev - displays the preceding record.
+* #### Read - reads the record with the record number in the promary key field.
+* #### Next - reads the next expense record.
+* #### Last - reads the last record in the expenses.
+* #### Lookup - Find records containing data matching one of the fields or lists all records.
+* #### Update - update one or more fields in the current record.
+* #### Delete - remove the current record.
+* #### Reset - reset the screen clearing all fields.
+* #### Help - open the help for this page.
+* #### The buttons are the same on all screens... 
+
+## 3. Data Fields - places to enter your information
+<p align="center">
+![Fields](./images/expensefields.png)
+</p>
+
+* #### Primary Key - the numeric record number unique to a record.
+* #### Date - the date the expense is incurred. Use the date picker (calendar icon) to choose a date or manually enter the month, day and year fields.
+* #### Amount - the dollar amount of the expense.
+* #### Description - optional additional info about the expense.
+* #### Catagory - click to choose a catagory for the expense.
+
+* #### Radio Buttons - To the right of each field there is a small circle. These are used to specify the field to use to do a lookup.
+  #### 1. Click the radio button next to the field you want to search.
+  #### 2. Fill in the field with all or part of the value you want to search for.
+   * ##### Skip steps 1 and 2 to list all of the records.
+   
+  #### 3. Click the lookup button
+   * ##### A dropdown list will appear at the top of the screen. Click it and click the one expense you want to see. It will be displayed. The first option is "Cancel". Click it to cancel the read read.
+   * ##### If nothing matches, a message will be displayed.
+   * ##### There is a button to the right of the catagory field with a plus sign in it. Clicking it will invoke the catagory editor if you need to add a catagory.
+   
+## 4. Make an entry:
+* #### 1. Select a date by entering the mm/dd/yyyy fields or click the calendar icon and use the date picker.
+* #### 2. Enter a dollar amount. Whole numbers do not need a ".00" added.
+* #### 3. Optionally enter additional description in the description field.
+* #### 4. Click the catagory list and click a catagory for the entry.
+* #### 5. Click the insert button.
+
+### Note: The initial release does no error or required field checking...
+
+
+</xmp><script type="text/javascript" src="strapdown.min.js?nonavbarfixed=n"></script>
+</body>
+</html>
